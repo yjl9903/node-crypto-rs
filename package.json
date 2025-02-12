@@ -27,7 +27,7 @@
     "release": "bumpp package.json npm/*/package.json --commit --push --tag",
     "test": "vitest",
     "test:bench": "vitest:bench",
-    "test:ci": "vitest:ci",
+    "test:ci": "vitest --run",
     "universal": "napi universal"
   },
   "devDependencies": {
