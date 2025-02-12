@@ -10,7 +10,17 @@ npm i node-crypto-rs
 
 ## Usage
 
+```ts
+import { encrypt_aes_gcm, decrypt_aes_gcm } from 'node-crypto-rs'
 
+const key = await crypto.subtle.exportKey(
+  'raw',
+  await crypto.subtle.generateKey({ name: 'AES-GCM', length: 256 }, true, ['encrypt', 'decrypt'])
+);
+
+const encrypted = await encrypt_aes_gcm(Buffer.from(key), Buffer.from('hello', 'utf-8'))
+const plainText = await decrypt_aes_gcm(Buffer.from(key), encrypted)
+```
 
 ## License
 
