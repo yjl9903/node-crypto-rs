@@ -43,13 +43,13 @@
     "ava": "^6.0.1"
   },
   "optionalDependencies": {
-    "@node-crypto-rs/core-darwin-arm64": "^workspace:*",
-    "@node-crypto-rs/core-darwin-x64": "^workspace:*",
-    "@node-crypto-rs/core-linux-arm64-gnu": "^workspace:*",
-    "@node-crypto-rs/core-linux-arm64-musl": "^workspace:*",
-    "@node-crypto-rs/core-linux-x64-gnu": "^workspace:*",
-    "@node-crypto-rs/core-win32-arm64-msvc": "^workspace:*",
-    "@node-crypto-rs/core-win32-x64-msvc": "^workspace:*"
+    "@node-crypto-rs/core-darwin-arm64": "workspace:*",
+    "@node-crypto-rs/core-darwin-x64": "workspace:*",
+    "@node-crypto-rs/core-linux-arm64-gnu": "workspace:*",
+    "@node-crypto-rs/core-linux-arm64-musl": "workspace:*",
+    "@node-crypto-rs/core-linux-x64-gnu": "workspace:*",
+    "@node-crypto-rs/core-win32-arm64-msvc": "workspace:*",
+    "@node-crypto-rs/core-win32-x64-msvc": "workspace:*"
   },
   "packageManager": "pnpm@10.3.0",
   "engines": {
