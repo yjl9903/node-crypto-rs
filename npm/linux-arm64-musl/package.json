@@ -1,5 +1,5 @@
 {
-  "name": "@node-crypto-rs/linux-arm64-musl",
+  "name": "@node-crypto-rs/core-linux-arm64-musl",
   "version": "0.0.0",
   "os": [
     "linux"

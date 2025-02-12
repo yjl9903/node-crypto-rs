@@ -1,6 +1,5 @@
 name: CI
-
-on:
+'on':
   push:
     branches:
       - main
@@ -13,16 +12,13 @@ on:
       - .editorconfig
       - docs/**
   pull_request: null
-
 env:
   DEBUG: napi:*
   APP_NAME: crypto-rs
   MACOSX_DEPLOYMENT_TARGET: '10.13'
-
 permissions:
   contents: write
   id-token: write
-
 jobs:
   build:
     strategy:
@@ -124,7 +120,6 @@ jobs:
           name: bindings-${{ matrix.settings.target }}
           path: ${{ env.APP_NAME }}.*.node
           if-no-files-found: error
-
   test-macOS-windows-binding:
     name: Test bindings on ${{ matrix.settings.target }} - node@${{ matrix.node }}
     needs:
@@ -161,7 +156,6 @@ jobs:
         shell: bash
       - name: Test bindings
         run: yarn test
-
   test-linux-x64-gnu-binding:
     name: Test bindings on Linux-x64-gnu - node@${{ matrix.node }}
     needs:
@@ -192,7 +186,6 @@ jobs:
         shell: bash
       - name: Test bindings
         run: docker run --rm -v $(pwd):/build -w /build node:${{ matrix.node }}-slim yarn test
-
   test-linux-x64-musl-binding:
     name: Test bindings on x86_64-unknown-linux-musl - node@${{ matrix.node }}
     needs:
@@ -225,7 +218,6 @@ jobs:
         shell: bash
       - name: Test bindings
         run: docker run --rm -v $(pwd):/build -w /build node:${{ matrix.node }}-alpine yarn test
-
   test-linux-aarch64-gnu-binding:
     name: Test bindings on aarch64-unknown-linux-gnu - node@${{ matrix.node }}
     needs:
@@ -266,7 +258,6 @@ jobs:
             set -e
             yarn test
             ls -la
-
   test-linux-aarch64-musl-binding:
     name: Test bindings on aarch64-unknown-linux-musl - node@${{ matrix.node }}
     needs:
@@ -300,7 +291,6 @@ jobs:
           run: |
             set -e
             yarn test
-
   publish:
     name: Publish
     runs-on: ubuntu-latest

@@ -1,5 +1,5 @@
 {
-  "name": "@node-crypto-rs/win32-x64-msvc",
+  "name": "@node-crypto-rs/core-win32-x64-msvc",
   "version": "0.0.0",
   "os": [
     "win32"

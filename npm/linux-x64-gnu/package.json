@@ -1,5 +1,5 @@
 {
-  "name": "@node-crypto-rs/linux-x64-gnu",
+  "name": "@node-crypto-rs/core-linux-x64-gnu",
   "version": "0.0.0",
   "os": [
     "linux"

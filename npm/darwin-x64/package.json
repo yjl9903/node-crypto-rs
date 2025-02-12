@@ -1,5 +1,5 @@
 {
-  "name": "@node-crypto-rs/darwin-x64",
+  "name": "@node-crypto-rs/core-darwin-x64",
   "version": "0.0.0",
   "os": [
     "darwin"

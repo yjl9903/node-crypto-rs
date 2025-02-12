@@ -1,3 +1,3 @@
-# `crypto-rs-linux-x64-gnu`
+# `@node-crypto-rs/core-linux-x64-gnu`
 
-This is the **x86_64-unknown-linux-gnu** binary for `crypto-rs`
+This is the **x86_64-unknown-linux-gnu** binary for `@node-crypto-rs/core`

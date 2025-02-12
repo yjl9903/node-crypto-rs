@@ -1,3 +1,3 @@
-# `crypto-rs-darwin-x64`
+# `@node-crypto-rs/core-darwin-x64`
 
-This is the **x86_64-apple-darwin** binary for `crypto-rs`
+This is the **x86_64-apple-darwin** binary for `@node-crypto-rs/core`
