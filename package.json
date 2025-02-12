@@ -1,7 +1,21 @@
 {
   "name": "crypto-rs",
   "version": "0.0.3",
+  "description": "",
+  "keywords": [
+    "crypto",
+    "napi"
+  ],
+  "homepage": "https://github.com/yjl9903/node-crypto-rs#readme",
+  "bugs": {
+    "url": "https://github.com/yjl9903/node-crypto-rs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yjl9903/node-crypto-rs.git"
+  },
   "license": "MIT",
+  "author": "XLor",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
