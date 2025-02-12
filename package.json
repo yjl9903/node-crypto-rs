@@ -1,5 +1,5 @@
 {
-  "name": "crypto-rs",
+  "name": "node-crypto-rs",
   "version": "0.0.3",
   "description": "",
   "keywords": [
@@ -34,12 +34,21 @@
     "@napi-rs/cli": "^2.18.4",
     "ava": "^6.0.1"
   },
-  "packageManager": "yarn@4.6.0",
+  "optionalDependencies": {
+    "@node-crypto-rs/core-darwin-arm64": "^workspace:*",
+    "@node-crypto-rs/core-darwin-x64": "^workspace:*",
+    "@node-crypto-rs/core-linux-arm64-gnu": "^workspace:*",
+    "@node-crypto-rs/core-linux-arm64-musl": "^workspace:*",
+    "@node-crypto-rs/core-linux-x64-gnu": "^workspace:*",
+    "@node-crypto-rs/core-win32-arm64-msvc": "^workspace:*",
+    "@node-crypto-rs/core-win32-x64-msvc": "^workspace:*"
+  },
+  "packageManager": "pnpm@10.3.0",
   "engines": {
     "node": ">= 10"
   },
   "napi": {
-    "name": "crypto-rs",
+    "name": "node-crypto-rs",
     "triples": {
       "additional": [
         "aarch64-apple-darwin",

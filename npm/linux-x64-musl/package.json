@@ -16,9 +16,9 @@
   },
   "license": "MIT",
   "author": "XLor",
-  "main": "crypto-rs.linux-x64-musl.node",
+  "main": "node-crypto-rs.linux-x64-musl.node",
   "files": [
-    "crypto-rs.linux-x64-musl.node"
+    "node-crypto-rs.linux-x64-musl.node"
   ],
   "engines": {
     "node": ">= 10"

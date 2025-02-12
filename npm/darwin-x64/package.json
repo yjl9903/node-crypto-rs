@@ -16,9 +16,9 @@
   },
   "license": "MIT",
   "author": "XLor",
-  "main": "crypto-rs.darwin-x64.node",
+  "main": "node-crypto-rs.darwin-x64.node",
   "files": [
-    "crypto-rs.darwin-x64.node"
+    "node-crypto-rs.darwin-x64.node"
   ],
   "engines": {
     "node": ">= 10"

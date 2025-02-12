@@ -16,9 +16,9 @@
   },
   "license": "MIT",
   "author": "XLor",
-  "main": "crypto-rs.win32-x64-msvc.node",
+  "main": "node-crypto-rs.win32-x64-msvc.node",
   "files": [
-    "crypto-rs.win32-x64-msvc.node"
+    "node-crypto-rs.win32-x64-msvc.node"
   ],
   "engines": {
     "node": ">= 10"
