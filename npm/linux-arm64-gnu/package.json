@@ -1,20 +1,34 @@
 {
   "name": "@node-crypto-rs/core-linux-arm64-gnu",
   "version": "0.0.2",
+  "description": "",
+  "keywords": [
+    "crypto",
+    "napi"
+  ],
+  "homepage": "https://github.com/yjl9903/node-crypto-rs#readme",
+  "bugs": {
+    "url": "https://github.com/yjl9903/node-crypto-rs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yjl9903/node-crypto-rs.git"
+  },
+  "license": "MIT",
+  "author": "XLor",
+  "main": "crypto-rs.linux-arm64-gnu.node",
+  "files": [
+    "crypto-rs.linux-arm64-gnu.node"
+  ],
+  "engines": {
+    "node": ">= 10"
+  },
   "os": [
     "linux"
   ],
   "cpu": [
     "arm64"
   ],
-  "main": "crypto-rs.linux-arm64-gnu.node",
-  "files": [
-    "crypto-rs.linux-arm64-gnu.node"
-  ],
-  "license": "MIT",
-  "engines": {
-    "node": ">= 10"
-  },
   "libc": [
     "glibc"
   ]

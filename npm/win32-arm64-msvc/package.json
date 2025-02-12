@@ -1,18 +1,32 @@
 {
   "name": "@node-crypto-rs/core-win32-arm64-msvc",
   "version": "0.0.2",
+  "description": "",
+  "keywords": [
+    "crypto",
+    "napi"
+  ],
+  "homepage": "https://github.com/yjl9903/node-crypto-rs#readme",
+  "bugs": {
+    "url": "https://github.com/yjl9903/node-crypto-rs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yjl9903/node-crypto-rs.git"
+  },
+  "license": "MIT",
+  "author": "XLor",
+  "main": "crypto-rs.win32-arm64-msvc.node",
+  "files": [
+    "crypto-rs.win32-arm64-msvc.node"
+  ],
+  "engines": {
+    "node": ">= 10"
+  },
   "os": [
     "win32"
   ],
   "cpu": [
     "arm64"
-  ],
-  "main": "crypto-rs.win32-arm64-msvc.node",
-  "files": [
-    "crypto-rs.win32-arm64-msvc.node"
-  ],
-  "license": "MIT",
-  "engines": {
-    "node": ">= 10"
-  }
+  ]
 }
