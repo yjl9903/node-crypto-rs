@@ -1,5 +1,6 @@
 # node-crypto-rs
 
+[![version](https://img.shields.io/npm/v/node-crypto-rs?label=node-crypto-rs)](https://www.npmjs.com/package/node-crypto-rs)
 [![CI](https://github.com/yjl9903/node-crypto-rs/actions/workflows/CI.yml/badge.svg)](https://github.com/yjl9903/node-crypto-rs/actions/workflows/CI.yml)
 
 Replace Node builtin crypto module with Rust.
