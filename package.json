@@ -20,16 +20,14 @@
   "types": "index.d.ts",
   "scripts": {
     "artifacts": "napi artifacts",
-    "build": "napi build --platform --release",
-    "build:debug": "napi build --platform",
+    "build": "napi build --platform --release --dts=target/index.d.ts",
+    "build:debug": "napi build --platform --dts=target/index.d.ts",
     "napi": "napi",
     "prepublishOnly": "napi prepublish -t npm",
     "release": "bumpp package.json npm/*/package.json --commit --push --tag",
-    "test": "ava",
+    "test": "vitest",
+    "test:ci": "vitest:ci",
     "universal": "napi universal"
-  },
-  "ava": {
-    "timeout": "3m"
   },
   "devDependencies": {
     "@napi-rs/cli": "^2.18.4",
@@ -40,7 +38,7 @@
     "@node-crypto-rs/core-linux-x64-gnu": "workspace:*",
     "@node-crypto-rs/core-win32-arm64-msvc": "workspace:*",
     "@node-crypto-rs/core-win32-x64-msvc": "workspace:*",
-    "ava": "^6.0.1"
+    "vitest": "^3.0.5"
   },
   "optionalDependencies": {
     "@node-crypto-rs/core-darwin-arm64": "workspace:*",
