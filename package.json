@@ -26,7 +26,7 @@
     "prepublishOnly": "napi prepublish -t npm",
     "release": "bumpp package.json npm/*/package.json --commit --push --tag",
     "test": "vitest",
-    "test:bench": "vitest:bench",
+    "test:bench": "vitest bench --run",
     "test:ci": "vitest --run",
     "universal": "napi universal"
   },
@@ -39,6 +39,7 @@
     "@node-crypto-rs/core-linux-x64-gnu": "workspace:*",
     "@node-crypto-rs/core-win32-arm64-msvc": "workspace:*",
     "@node-crypto-rs/core-win32-x64-msvc": "workspace:*",
+    "@peculiar/webcrypto": "^1.5.0",
     "@types/node": "^22.13.1",
     "bumpp": "^10.0.3",
     "typescript": "^5.7.3",

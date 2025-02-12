@@ -1,6 +1,11 @@
+import { Crypto } from '@peculiar/webcrypto';
 import { describe, it, expect } from 'vitest';
 
 import { decrypt_aes_gcm, encrypt_aes_gcm } from '../index.js';
+
+if (!global.crypto) {
+  global.crypto = new Crypto();
+}
 
 describe('aes gcm', async () => {
   const key = await crypto.subtle.generateKey({ name: 'AES-GCM', length: 256 }, true, [

@@ -12,10 +12,41 @@ describe('aes gcm', async () => {
 
   const text = Buffer.from('hello world', 'utf-8');
 
-  bench('node', async () => {});
+  const n = 100;
 
-  bench('rust', async () => {
-    const result = await encrypt_aes_gcm(Buffer.from(keyBuffer), text);
-    await decrypt_aes_gcm(Buffer.from(keyBuffer), result);
+  bench('node', async () => {
+    const tasks = [];
+    for (let i = 0; i < n; i++) {
+      const fn = async () => {
+        const iv = crypto.getRandomValues(new Uint8Array(12));
+        const value = await crypto.subtle.encrypt({ name: 'AES-GCM', iv }, key, text);
+        await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, value);
+      };
+      tasks.push(fn());
+    }
+    await Promise.all(tasks);
+  });
+
+  bench('rust sync', async () => {
+    const tasks = [];
+    for (let i = 0; i < n; i++) {
+      const fn = async () => {
+        const result = await encrypt_aes_gcm(Buffer.from(keyBuffer), text);
+        await decrypt_aes_gcm(Buffer.from(keyBuffer), result);
+      };
+      tasks.push(await fn());
+    }
+  });
+
+  bench('rust parallel', async () => {
+    const tasks = [];
+    for (let i = 0; i < n; i++) {
+      const fn = async () => {
+        const result = await encrypt_aes_gcm(Buffer.from(keyBuffer), text);
+        await decrypt_aes_gcm(Buffer.from(keyBuffer), result);
+      };
+      tasks.push(fn());
+    }
+    await Promise.all(tasks);
   });
 });
