@@ -60,6 +60,8 @@ jobs:
     runs-on: ${{ matrix.settings.host }}
     steps:
       - uses: actions/checkout@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4.0.0
       - name: Setup node
         uses: actions/setup-node@v4
         if: ${{ !matrix.settings.docker }}
@@ -138,6 +140,8 @@ jobs:
     runs-on: ${{ matrix.settings.host }}
     steps:
       - uses: actions/checkout@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4.0.0
       - name: Setup node
         uses: actions/setup-node@v4
         with:
@@ -169,6 +173,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4.0.0
       - name: Setup node
         uses: actions/setup-node@v4
         with:
@@ -199,6 +205,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4.0.0
       - name: Setup node
         uses: actions/setup-node@v4
         with:
@@ -231,6 +239,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4.0.0
       - name: Download artifacts
         uses: actions/download-artifact@v4
         with:
@@ -265,6 +275,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4.0.0
       - name: Download artifacts
         uses: actions/download-artifact@v4
         with:
@@ -302,6 +314,8 @@ jobs:
       - test-linux-aarch64-musl-binding
     steps:
       - uses: actions/checkout@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4.0.0
       - name: Setup node
         uses: actions/setup-node@v4
         with:
