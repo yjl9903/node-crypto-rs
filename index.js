@@ -323,6 +323,7 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`);
 }
 
-const { encrypt_aes_gcm } = nativeBinding;
+const { encrypt_aes_gcm, decrypt_aes_gcm } = nativeBinding;
 
 module.exports.encrypt_aes_gcm = encrypt_aes_gcm;
+module.exports.decrypt_aes_gcm = decrypt_aes_gcm;
