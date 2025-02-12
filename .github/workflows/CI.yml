@@ -272,7 +272,7 @@ jobs:
           options: '--platform linux/arm64 -v ${{ github.workspace }}:/build -w /build'
           run: |
             set -e
-            pnpm test:ci
+            npx run test:ci
             ls -la
   test-linux-aarch64-musl-binding:
     name: Test bindings on aarch64-unknown-linux-musl - node@${{ matrix.node }}
@@ -308,7 +308,7 @@ jobs:
           options: '--platform linux/arm64 -v ${{ github.workspace }}:/build -w /build'
           run: |
             set -e
-            pnpm test:ci
+            npx run test:ci
   publish:
     name: Publish
     runs-on: ubuntu-latest
