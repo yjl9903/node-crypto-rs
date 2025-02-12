@@ -26,6 +26,7 @@
     "prepublishOnly": "napi prepublish -t npm",
     "release": "bumpp package.json npm/*/package.json --commit --push --tag",
     "test": "vitest",
+    "test:bench": "vitest:bench",
     "test:ci": "vitest:ci",
     "universal": "napi universal"
   },
@@ -38,6 +39,8 @@
     "@node-crypto-rs/core-linux-x64-gnu": "workspace:*",
     "@node-crypto-rs/core-win32-arm64-msvc": "workspace:*",
     "@node-crypto-rs/core-win32-x64-msvc": "workspace:*",
+    "@types/node": "^22.13.1",
+    "typescript": "^5.7.3",
     "vitest": "^3.0.5"
   },
   "optionalDependencies": {
