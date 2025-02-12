@@ -1,7 +1,7 @@
 {
   "name": "node-crypto-rs",
   "version": "0.0.6",
-  "description": "",
+  "description": "Replace Node builtin crypto module with Rust",
   "keywords": [
     "crypto",
     "napi"

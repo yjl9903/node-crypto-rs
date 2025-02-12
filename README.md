@@ -1,6 +1,11 @@
 # node-crypto-rs
 
-[![CI](https://github.com/yjl9903/node-crypto-rs/actions/workflows/ci.yml/badge.svg)](https://github.com/yjl9903/node-crypto-rs/actions/workflows/ci.yml)
+[![CI](https://github.com/yjl9903/node-crypto-rs/actions/workflows/CI.yml/badge.svg)](https://github.com/yjl9903/node-crypto-rs/actions/workflows/CI.yml)
+
+Replace Node builtin crypto module with Rust.
+
+> [!WARNING]  
+> This package is experimental.
 
 ## Installation
 
@@ -24,4 +29,4 @@ const plainText = await decrypt_aes_gcm(Buffer.from(key), encrypted)
 
 ## License
 
-MIT License © [2025] [XLor](https://github.com/yjl9903)
+MIT License © 2025 [XLor](https://github.com/yjl9903)
