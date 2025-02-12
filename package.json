@@ -23,7 +23,6 @@
     "build": "napi build --platform --release --dts=target/index.d.ts",
     "build:debug": "napi build --platform --dts=target/index.d.ts",
     "napi": "napi",
-    "prepublishOnly": "napi prepublish -t npm",
     "release": "bumpp package.json npm/*/package.json --commit --push --tag",
     "test": "vitest",
     "test:bench": "vitest bench --run",
