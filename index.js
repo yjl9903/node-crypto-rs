@@ -37,7 +37,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./node-crypto-rs.android-arm64.node');
           } else {
-            nativeBinding = require('node-crypto-rs-android-arm64');
+            nativeBinding = require('@node-crypto-rs/core-android-arm64');
           }
         } catch (e) {
           loadError = e;
@@ -49,7 +49,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./node-crypto-rs.android-arm-eabi.node');
           } else {
-            nativeBinding = require('node-crypto-rs-android-arm-eabi');
+            nativeBinding = require('@node-crypto-rs/core-android-arm-eabi');
           }
         } catch (e) {
           loadError = e;
@@ -67,7 +67,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./node-crypto-rs.win32-x64-msvc.node');
           } else {
-            nativeBinding = require('node-crypto-rs-win32-x64-msvc');
+            nativeBinding = require('@node-crypto-rs/core-win32-x64-msvc');
           }
         } catch (e) {
           loadError = e;
@@ -79,7 +79,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./node-crypto-rs.win32-ia32-msvc.node');
           } else {
-            nativeBinding = require('node-crypto-rs-win32-ia32-msvc');
+            nativeBinding = require('@node-crypto-rs/core-win32-ia32-msvc');
           }
         } catch (e) {
           loadError = e;
@@ -91,7 +91,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./node-crypto-rs.win32-arm64-msvc.node');
           } else {
-            nativeBinding = require('node-crypto-rs-win32-arm64-msvc');
+            nativeBinding = require('@node-crypto-rs/core-win32-arm64-msvc');
           }
         } catch (e) {
           loadError = e;
@@ -107,7 +107,7 @@ switch (platform) {
       if (localFileExisted) {
         nativeBinding = require('./node-crypto-rs.darwin-universal.node');
       } else {
-        nativeBinding = require('node-crypto-rs-darwin-universal');
+        nativeBinding = require('@node-crypto-rs/core-darwin-universal');
       }
       break;
     } catch {}
@@ -118,7 +118,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./node-crypto-rs.darwin-x64.node');
           } else {
-            nativeBinding = require('node-crypto-rs-darwin-x64');
+            nativeBinding = require('@node-crypto-rs/core-darwin-x64');
           }
         } catch (e) {
           loadError = e;
@@ -130,7 +130,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./node-crypto-rs.darwin-arm64.node');
           } else {
-            nativeBinding = require('node-crypto-rs-darwin-arm64');
+            nativeBinding = require('@node-crypto-rs/core-darwin-arm64');
           }
         } catch (e) {
           loadError = e;
@@ -149,7 +149,7 @@ switch (platform) {
       if (localFileExisted) {
         nativeBinding = require('./node-crypto-rs.freebsd-x64.node');
       } else {
-        nativeBinding = require('node-crypto-rs-freebsd-x64');
+        nativeBinding = require('@node-crypto-rs/core-freebsd-x64');
       }
     } catch (e) {
       loadError = e;
@@ -164,7 +164,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./node-crypto-rs.linux-x64-musl.node');
             } else {
-              nativeBinding = require('node-crypto-rs-linux-x64-musl');
+              nativeBinding = require('@node-crypto-rs/core-linux-x64-musl');
             }
           } catch (e) {
             loadError = e;
@@ -175,7 +175,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./node-crypto-rs.linux-x64-gnu.node');
             } else {
-              nativeBinding = require('node-crypto-rs-linux-x64-gnu');
+              nativeBinding = require('@node-crypto-rs/core-linux-x64-gnu');
             }
           } catch (e) {
             loadError = e;
@@ -189,7 +189,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./node-crypto-rs.linux-arm64-musl.node');
             } else {
-              nativeBinding = require('node-crypto-rs-linux-arm64-musl');
+              nativeBinding = require('@node-crypto-rs/core-linux-arm64-musl');
             }
           } catch (e) {
             loadError = e;
@@ -200,7 +200,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./node-crypto-rs.linux-arm64-gnu.node');
             } else {
-              nativeBinding = require('node-crypto-rs-linux-arm64-gnu');
+              nativeBinding = require('@node-crypto-rs/core-linux-arm64-gnu');
             }
           } catch (e) {
             loadError = e;
@@ -216,7 +216,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./node-crypto-rs.linux-arm-musleabihf.node');
             } else {
-              nativeBinding = require('node-crypto-rs-linux-arm-musleabihf');
+              nativeBinding = require('@node-crypto-rs/core-linux-arm-musleabihf');
             }
           } catch (e) {
             loadError = e;
@@ -227,7 +227,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./node-crypto-rs.linux-arm-gnueabihf.node');
             } else {
-              nativeBinding = require('node-crypto-rs-linux-arm-gnueabihf');
+              nativeBinding = require('@node-crypto-rs/core-linux-arm-gnueabihf');
             }
           } catch (e) {
             loadError = e;
@@ -241,7 +241,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./node-crypto-rs.linux-riscv64-musl.node');
             } else {
-              nativeBinding = require('node-crypto-rs-linux-riscv64-musl');
+              nativeBinding = require('@node-crypto-rs/core-linux-riscv64-musl');
             }
           } catch (e) {
             loadError = e;
@@ -252,7 +252,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./node-crypto-rs.linux-riscv64-gnu.node');
             } else {
-              nativeBinding = require('node-crypto-rs-linux-riscv64-gnu');
+              nativeBinding = require('@node-crypto-rs/core-linux-riscv64-gnu');
             }
           } catch (e) {
             loadError = e;
@@ -265,7 +265,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./node-crypto-rs.linux-s390x-gnu.node');
           } else {
-            nativeBinding = require('node-crypto-rs-linux-s390x-gnu');
+            nativeBinding = require('@node-crypto-rs/core-linux-s390x-gnu');
           }
         } catch (e) {
           loadError = e;
