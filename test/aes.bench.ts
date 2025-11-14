@@ -1,7 +1,7 @@
 import { Crypto } from '@peculiar/webcrypto';
 import { describe, bench } from 'vitest';
 
-import { decrypt_aes_gcm, encrypt_aes_gcm } from '../index.js';
+import { decryptAesGcm, encryptAesGcm } from '../index.js';
 
 if (!global.crypto) {
   global.crypto = new Crypto();
@@ -48,8 +48,8 @@ describe('aes gcm', async () => {
     const tasks = [];
     for (let i = 0; i < n; i++) {
       const fn = async () => {
-        const result = await encrypt_aes_gcm(Buffer.from(keyBuffer), text);
-        await decrypt_aes_gcm(Buffer.from(keyBuffer), result);
+        const result = await encryptAesGcm(Buffer.from(keyBuffer), text);
+        await decryptAesGcm(Buffer.from(keyBuffer), result);
       };
       tasks.push(await fn());
     }
@@ -59,8 +59,8 @@ describe('aes gcm', async () => {
     const tasks = [];
     for (let i = 0; i < n; i++) {
       const fn = async () => {
-        const result = await encrypt_aes_gcm(Buffer.from(keyBuffer), text);
-        await decrypt_aes_gcm(Buffer.from(keyBuffer), result);
+        const result = await encryptAesGcm(Buffer.from(keyBuffer), text);
+        await decryptAesGcm(Buffer.from(keyBuffer), result);
       };
       tasks.push(fn());
     }

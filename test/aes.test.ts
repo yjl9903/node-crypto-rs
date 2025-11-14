@@ -1,7 +1,7 @@
 import { Crypto } from '@peculiar/webcrypto';
 import { describe, it, expect } from 'vitest';
 
-import { decrypt_aes_gcm, encrypt_aes_gcm } from '../index.js';
+import { encryptAesGcm, decryptAesGcm } from '../index.js';
 
 if (!global.crypto) {
   global.crypto = new Crypto();
@@ -17,10 +17,10 @@ describe('aes gcm', async () => {
 
   it('should work', async () => {
     const text = Buffer.from('hello world', 'utf-8');
-    const result = await encrypt_aes_gcm(Buffer.from(keyBuffer), text);
+    const result = await encryptAesGcm(Buffer.from(keyBuffer), text);
     const value = new Uint8Array(result);
 
-    const r1 = await decrypt_aes_gcm(Buffer.from(keyBuffer), result);
+    const r1 = await decryptAesGcm(Buffer.from(keyBuffer), result);
     const r2 = Buffer.from(
       await crypto.subtle.decrypt({ name: 'AES-GCM', iv: value.slice(0, 12) }, key, value.slice(12))
     );

@@ -30,7 +30,7 @@
     "universal": "napi universal"
   },
   "devDependencies": {
-    "@napi-rs/cli": "^2.18.4",
+    "@napi-rs/cli": "^3.4.1",
     "@node-crypto-rs/core-darwin-arm64": "workspace:*",
     "@node-crypto-rs/core-darwin-x64": "workspace:*",
     "@node-crypto-rs/core-linux-arm64-gnu": "workspace:*",
@@ -39,10 +39,10 @@
     "@node-crypto-rs/core-win32-arm64-msvc": "workspace:*",
     "@node-crypto-rs/core-win32-x64-msvc": "workspace:*",
     "@peculiar/webcrypto": "^1.5.0",
-    "@types/node": "^22.13.1",
-    "bumpp": "^10.0.3",
-    "typescript": "^5.7.3",
-    "vitest": "^3.0.5"
+    "@types/node": "^24.10.1",
+    "bumpp": "^10.3.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.8"
   },
   "optionalDependencies": {
     "@node-crypto-rs/core-darwin-arm64": "workspace:*",
@@ -53,12 +53,12 @@
     "@node-crypto-rs/core-win32-arm64-msvc": "workspace:*",
     "@node-crypto-rs/core-win32-x64-msvc": "workspace:*"
   },
-  "packageManager": "pnpm@10.3.0",
+  "packageManager": "pnpm@10.22.0",
   "engines": {
     "node": ">= 10"
   },
   "napi": {
-    "name": "node-crypto-rs",
+    "binaryName": "node-crypto-rs",
     "triples": {
       "additional": [
         "aarch64-apple-darwin",
